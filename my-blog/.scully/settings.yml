@@ -1,0 +1,11 @@
+identifier: l5s8p5n9ia10g962
+appPort: 1864
+staticPort: 1668
+reloadPort: 2667
+hostName: localhost
+projectName: my-blog
+homeFolder: /home/slo/workspace/angular/angular_projects/my-blog
+distFolder: ./dist/my-blog/browser
+outDir: /home/slo/workspace/angular/angular_projects/my-blog/dist/static
+handle404: ''
+allowErrorCollect: true

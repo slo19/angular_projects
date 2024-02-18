@@ -1,0 +1,61 @@
+{
+  "hash": "3fefdb18",
+  "configHash": "08a5d5af",
+  "lockfileHash": "ef0e8489",
+  "browserHash": "f47c4f43",
+  "optimized": {
+    "@angular/common": {
+      "src": "../../../../../node_modules/@angular/common/fesm2022/common.mjs",
+      "file": "@angular_common.js",
+      "fileHash": "49a825e2",
+      "needsInterop": false
+    },
+    "@angular/core": {
+      "src": "../../../../../node_modules/@angular/core/fesm2022/core.mjs",
+      "file": "@angular_core.js",
+      "fileHash": "3f7f261f",
+      "needsInterop": false
+    },
+    "@angular/platform-browser": {
+      "src": "../../../../../node_modules/@angular/platform-browser/fesm2022/platform-browser.mjs",
+      "file": "@angular_platform-browser.js",
+      "fileHash": "da7601a2",
+      "needsInterop": false
+    },
+    "@angular/router": {
+      "src": "../../../../../node_modules/@angular/router/fesm2022/router.mjs",
+      "file": "@angular_router.js",
+      "fileHash": "a9d954df",
+      "needsInterop": false
+    },
+    "@scullyio/ng-lib": {
+      "src": "../../../../../node_modules/@scullyio/ng-lib/fesm2015/scullyio-ng-lib.js",
+      "file": "@scullyio_ng-lib.js",
+      "fileHash": "e321a80c",
+      "needsInterop": false
+    },
+    "rxjs": {
+      "src": "../../../../../node_modules/rxjs/dist/esm5/index.js",
+      "file": "rxjs.js",
+      "fileHash": "f560a53a",
+      "needsInterop": false
+    }
+  },
+  "chunks": {
+    "chunk-5KX7ABYZ": {
+      "file": "chunk-5KX7ABYZ.js"
+    },
+    "chunk-RE6GW4TL": {
+      "file": "chunk-RE6GW4TL.js"
+    },
+    "chunk-MTMQRAJE": {
+      "file": "chunk-MTMQRAJE.js"
+    },
+    "chunk-NU3M6P6R": {
+      "file": "chunk-NU3M6P6R.js"
+    },
+    "chunk-IONCU4BC": {
+      "file": "chunk-IONCU4BC.js"
+    }
+  }
+}
