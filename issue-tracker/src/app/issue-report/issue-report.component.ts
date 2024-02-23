@@ -13,7 +13,7 @@ interface IssueForm {
 @Component({
   selector: 'app-issue-report',
   templateUrl: './issue-report.component.html',
-  styleUrl: './issue-report.component.css'
+  styleUrls: ['./issue-report.component.css']
 })
 export class IssueReportComponent {
   @Output() formClose = new EventEmitter();
