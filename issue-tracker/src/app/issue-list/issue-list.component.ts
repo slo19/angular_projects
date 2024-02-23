@@ -9,7 +9,7 @@ import { IssuesService } from '../issues.service';
 })
 export class IssueListComponent implements OnInit {
   private readonly issuesService = inject(IssuesService);
-
+  showReportIssue = false;
   issues: Issue[] = [];
   constructor() {}
   ngOnInit(): void {
@@ -17,5 +17,10 @@ export class IssueListComponent implements OnInit {
   }
   private getIssues() {
     this.issues = this.issuesService.getPendingIssues();
+  }
+
+  onCloseReport() {
+    this.showReportIssue = false;
+    this.getIssues();
   }
 }

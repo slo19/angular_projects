@@ -1,4 +1,4 @@
-import { Component, inject } from '@angular/core';
+import { Component, EventEmitter, inject, Output, } from '@angular/core';
 import { FormControl, FormGroup } from '@angular/forms';
 
 import { Issue } from '../issue';
@@ -16,6 +16,8 @@ interface IssueForm {
   styleUrl: './issue-report.component.css'
 })
 export class IssueReportComponent {
+  @Output() formClose = new EventEmitter();
+
   private readonly issuesService = inject(IssuesService);
   
   issueForm = new FormGroup<IssueForm>({
@@ -27,5 +29,6 @@ export class IssueReportComponent {
 
   addIssue() {
     this.issuesService.createIssue(this.issueForm.getRawValue() as Issue);
+    this.formClose.emit();
   }
 }
