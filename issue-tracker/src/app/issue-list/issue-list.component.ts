@@ -38,6 +38,5 @@ export class IssueListComponent implements OnInit {
 
   select(issue: Issue) {
     this.selectedIssue = issue;
-    console.log(this.selectedIssue);
   }
 }
