@@ -1,6 +1,6 @@
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
 import { Weather } from '../weather';
-import { WeatherService } '../weather.service';
+import { WeatherService } from '../weather.service';
 
 @Component({
   selector: 'app-weather',
@@ -9,7 +9,9 @@ import { WeatherService } '../weather.service';
 })
 export class WeatherComponent {
   weather: Weather | undefined;
-  constructor(private weatherService: WeatherService){}
+  private weatherService = inject(WeatherService);
+
+  constructor(){}
 
   search(city: string) {
     this.weatherService

@@ -9,7 +9,7 @@ import { Weather } from './weather';
 export class WeatherService {
   private http = inject(HttpClient);
   private apiUrl = 'https://api.openweathermap.org/data/2.5/';
-  private apiKey = '';
+  private apiKey = '<your-api-key>';
   constructor() { }
 
   getWeather(city: string): Observable<Weather> {
@@ -17,6 +17,6 @@ export class WeatherService {
       .set('units', 'metric')
       .set('q', city)
       .set('appId', this.apiKey);
-    return this.http.get<Weather>(this.apiUrl + weather, {params: options});
+    return this.http.get<Weather>(this.apiUrl + 'weather', {params: options});
   }
 }
