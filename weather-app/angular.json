@@ -106,6 +106,23 @@
             ],
             "scripts": []
           }
+        },
+        "deploy": {
+          "builder": "@angular/fire:deploy",
+          "options": {
+            "version": 2
+          },
+          "configurations": {
+            "production": {
+              "buildTarget": "weather-app:build:production",
+              "serveTarget": "weather-app:serve:production"
+            },
+            "development": {
+              "buildTarget": "weather-app:build:development",
+              "serveTarget": "weather-app:serve:development"
+            }
+          },
+          "defaultConfiguration": "production"
         }
       }
     }
